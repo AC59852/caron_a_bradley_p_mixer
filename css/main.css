@@ -1,0 +1,121 @@
+.hidden
+{
+	display: none;
+}
+
+h1
+{
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+ul, li, a, p
+{
+	text-decoration: none;
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+#logo
+{
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	font-size: 32px;
+	padding-top: 25px;
+	background-color: #333333;
+	background-size: 50px 200px;
+	height: 100px;
+	width: 15%;
+	margin: 0 auto;
+}
+
+#mainNav ul
+{
+	display: flex;
+	flex-direction: row;
+	margin-left: 100px;
+	font-size: 18px;
+}
+
+#mainNav ul li
+{
+	padding: 0px 50px 40px 50px;
+	margin-top: -50px;
+}
+
+#mainNav span
+{
+	display: flex;
+	flex-direction: row;
+	margin-left: 310px;
+}
+
+#bck
+{
+	background-color: gray;
+	width: 85%;
+	height: 900px;
+	margin: 0 auto;
+}
+
+#musicBox
+{
+	background-color: #333333;
+	width: 70%;
+	height: 500px;
+	margin: -800px auto;
+}
+
+#musicBox p
+{
+	color: white;
+	font-size: 48px;
+	text-align: center;
+	padding-top: 200px;
+}
+
+#iconsBox
+{
+	background-color: #333333;
+	width: 70%;
+	height: 100px;
+	margin: 840px auto 60px;
+	padding-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.icon
+{
+	background-color: white;
+	width: 8%;
+	height: 80px;
+}
+
+#descBox
+{
+	background-color: #333333;
+	width: 55%;
+	height: 150px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+#descBox p 
+{
+	color: white;
+	padding-top: 40px;
+	padding-bottom: 50px;	
+	text-align: center;
+	font-size: 30px;
+	margin: 0 auto;
+
+}
+
+.icon p
+{
+	text-align: center;
+	padding-top: 30px;
+}
