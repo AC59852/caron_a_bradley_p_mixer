@@ -31,9 +31,10 @@
 	<section>
 		<h2 class="hidden">Music Box</h2>
 		<div id="bck"></div>
-		<div id="musicBox"><p>Music Drag and Drop Box</p></div>
+		<div id="musicBox" ondrop="drop(event)" ondragover="allowDrop(event)">
+			<p>Music Drag and Drop Box</p></div>
 		<div id="iconsBox">
-			<div class="icon"><p>Icon 1</p></div>
+			<div id="icon"><img id="drag1" src="images/bck1.jpg" height="100" width="100" alt="" draggable="true" ondragstart="drag(event)"><p>Icon 1</p></div>
 			<div class="icon"><p>Icon 2</p></div>
 			<div class="icon"><p>Icon 3</p></div>
 			<div class="icon"><p>Icon 4</p></div>
@@ -48,5 +49,19 @@
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, iste. Nostrum ratione rerum eum, dicta perspiciatis vel, nulla et aliquam qui, distinctio quisquam asperiores id sit natus voluptate labore ea.</p>
 	</section>
 	</div>
+	<script src="js/main.js"></script>
+	<script>function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}</script>
 </body>
 </html>

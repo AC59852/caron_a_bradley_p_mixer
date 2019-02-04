@@ -87,9 +87,9 @@ ul, li, a, p
 	justify-content: space-evenly;
 }
 
-.icon
+#icon
 {
-	background-color: white;
+	background-image: url(../images/bck1.jpg);
 	width: 8%;
 	height: 80px;
 }
