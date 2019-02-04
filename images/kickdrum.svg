@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="kickdrum" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 234.4 247.7" style="enable-background:new 0 0 234.4 247.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+</style>
+<circle id="drum" class="st0" cx="116.3" cy="103.2" r="100.2"/>
+<polyline id="bottom" class="st1" points="94.6,201.1 94.6,167.9 137.1,167.9 137.1,201.1 "/>
+<line id="neck" class="st1" x1="116.3" y1="203.4" x2="116.3" y2="134.7"/>
+<ellipse id="pedal" class="st1" cx="116.1" cy="128.9" rx="8.1" ry="10.9"/>
+<polyline id="leg_2" class="st0" points="35.7,162.7 7.1,244.7 0,244.7 16.1,244.7 "/>
+<polyline id="leg_1" class="st0" points="198.7,162.7 227.3,244.7 234.4,244.7 218.3,244.7 "/>
+</svg>
