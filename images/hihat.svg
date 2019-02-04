@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="hihat" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 104.1 202.8" style="enable-background:new 0 0 104.1 202.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<polyline id="leg_2" class="st0" points="52.4,112 52.4,169.2 19.9,201.7 "/>
+<line id="body" class="st0" x1="52.4" y1="112" x2="52.4" y2="54.7"/>
+<ellipse id="cymbal_2" class="st1" cx="52" cy="47.6" rx="51" ry="12.7"/>
+<ellipse id="cymbal_1" class="st1" cx="52" cy="39.2" rx="51" ry="12.7"/>
+<line id="top" class="st0" x1="52.1" y1="39.2" x2="52.1" y2="0"/>
+<path id="support" class="st0" d="M52.4,126L52.4,126c-1.7,0-3.2-1.4-3.2-3.2v-7.7c0-1.7,1.4-3.2,3.2-3.2h0c1.7,0,3.2,1.4,3.2,3.2
+	v7.7C55.5,124.6,54.1,126,52.4,126z"/>
+<polyline id="leg_1" class="st0" points="84.9,201.7 52.4,169.2 52.4,195.3 "/>
+</svg>
