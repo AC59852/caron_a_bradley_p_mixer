@@ -54,26 +54,27 @@ ul, li, a, p
 {
 	background-color: white;
 	width: 70%;
-	height: 315px;
+	height: 300px;
 	margin: -800px auto;
-	background-image: url(../images/trebleclef.jpg);
 
 }
 
 .dropZone
 {
 	height: 100px;
-	border-bottom: 3px solid black;
-	background-color: lightgray; 
+	border: 3px solid black;
+	background-color: white; 
+
 }
 
 #buttons
 {
 	display: flex;
 	flex-direction: row;
-	width: 300px;
+	width: 200px;
 	justify-content: space-evenly;
 	padding-top: 20px;
+	margin-left: 86px;
 }
 
 #musicBox p
@@ -103,7 +104,7 @@ ul, li, a, p
 	width: 55%;
 	height: 150px;
 	margin: 0 auto;
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 }
 
 #descBox p 

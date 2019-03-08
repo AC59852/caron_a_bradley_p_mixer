@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="kickdrum" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 234.4 247.7" style="enable-background:new 0 0 234.4 247.7;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#FFFFFF;stroke:#000000;stroke-width:6;stroke-miterlimit:10;}
-	.st1{fill:#FFFFFF;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
-</style>
-<circle id="drum" class="st0" cx="116.3" cy="103.2" r="100.2"/>
-<polyline id="bottom" class="st1" points="94.6,201.1 94.6,167.9 137.1,167.9 137.1,201.1 "/>
-<line id="neck" class="st1" x1="116.3" y1="203.4" x2="116.3" y2="134.7"/>
-<ellipse id="pedal" class="st1" cx="116.1" cy="128.9" rx="8.1" ry="10.9"/>
-<polyline id="leg_2" class="st0" points="35.7,162.7 7.1,244.7 0,244.7 16.1,244.7 "/>
-<polyline id="leg_1" class="st0" points="198.7,162.7 227.3,244.7 234.4,244.7 218.3,244.7 "/>
-</svg>
+<svg id="kickdrum" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234.4 249.68"><defs><style>.cls-1{fill:#f9f9fa;stroke-width:10px;}.cls-1,.cls-2,.cls-4,.cls-5{stroke:#231f20;}.cls-1,.cls-2,.cls-3,.cls-4,.cls-5{stroke-miterlimit:10;}.cls-2,.cls-5{fill:#fff;}.cls-2,.cls-3,.cls-4{stroke-width:4px;}.cls-3{fill:none;stroke:#322011;}.cls-4{fill:#ffcc7c;}.cls-5{stroke-width:6px;}</style></defs><title>kickdrum</title><circle id="drum" class="cls-1" cx="116.33" cy="105.22" r="100.22"/><polyline id="bottom" class="cls-2" points="94.62 203.07 94.62 169.93 137.14 169.93 137.14 203.07"/><line id="neck" class="cls-2" x1="116.33" y1="205.43" x2="116.33" y2="136.7"/><circle id="drum-2" data-name="drum" class="cls-3" cx="116.38" cy="106.31" r="96.76"/><ellipse id="pedal" class="cls-4" cx="116.12" cy="130.94" rx="8.1" ry="10.85"/><polyline id="leg_2" data-name="leg 2" class="cls-5" points="35.71 164.74 7.12 246.68 0 246.68 16.11 246.68"/><polyline id="leg_1" data-name="leg 1" class="cls-5" points="198.7 164.74 227.28 246.68 234.4 246.68 218.29 246.68"/></svg>
