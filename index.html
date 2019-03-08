@@ -10,56 +10,51 @@
 <body>
 	<div id="container">
 	<header>
-	<nav>
-		<div id="logo">
-			<h1>THK Studios</h1>
-		</div>
-		<div id="mainNav">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Why We Made This</a></li>
-				<li><a href="#">Sounds Used</a></li>
-				<li><a href="#">Upload</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</div>
+	<nav id="mainNav">
+		<h2 class="hidden">Main Navigation</h2>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="projects.html">OUR PROJECTS</a></li>
+                <li><a href="fundraising.html">FUNDRAISERS</a></li>
+                <li><object id="logo" height="100" width="100" data="images/trebleclef.jpg"></object></li>
+                <li><a href="pastevents.html">PAST EVENTS</a></li>
+                <li><a href="partners.html">PARTNERS</a></li>
+                <li><a href="newsletters.html">NEWSLETTER</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
 	</nav>
 </header>
 	<section>
 		<h2 class="hidden">Music Box</h2>
-		<div id="bck"></div>
-		<div id="musicBox" ondrop="drop(event)" ondragover="allowDrop(event)">
-			<p>Music Drag and Drop Box</p></div>
+		<div id="bck">
+			<div id="buttons">
+			<div id="play"><img src="images/play_button.jpg" width="100" height="60"></div>
+			<div id="pause"><img src="images/pause.jpg" width="100" height="60"></div>
+		</div>
+		</div>
+
+		<div id="musicBox">
+			<div class="dropZone"></div>
+			<div class="dropZone"></div>
+			<div class="dropZone"></div>
+		</div>
 		<div id="iconsBox">
-			<div id="icon"><img id="drag1" src="images/bck1.jpg" height="100" width="100" alt="" draggable="true" ondragstart="drag(event)"><p>Icon 1</p></div>
-			<div class="icon"><p>Icon 2</p></div>
-			<div class="icon"><p>Icon 3</p></div>
-			<div class="icon"><p>Icon 4</p></div>
-			<div class="icon"><p>Icon 5</p></div>
-			<div class="icon"><p>Icon 6</p></div>
-			<div class="icon"><p>Icon 7</p></div>
-			<div class="icon"><p>Icon 8</p></div>
+			<div id="icon"><img src="images/trebleclef.jpg" width="100" height="100"></div>
+			<div class="icon"><img src="images/trebleclef.jpg" width="100" height="100"></div>
+			<div class="icon"><img src="images/trebleclef.jpg" width="100" height="100"></div>
+			<div class="icon"><img src="images/trebleclef.jpg" width="100" height="100"></div>
+			<div class="icon"><img src="images/trebleclef.jpg" width="100" height="100"></div>
+			<div class="icon"><img src="images/trebleclef.jpg" width="100" height="100"></div>
+			<div class="icon"><img src="images/trebleclef.jpg" width="100" height="100"></div>
+			<div class="icon"><img src="images/trebleclef.jpg" width="100" height="100"></div>
 		</div>
 	</section>
 	<section id="descBox">
-		<h2 class="hidden">Description Box</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, iste. Nostrum ratione rerum eum, dicta perspiciatis vel, nulla et aliquam qui, distinctio quisquam asperiores id sit natus voluptate labore ea.</p>
+		<h2 id="instructions">Instructions:</h2>
+		<p>To use the mixer drag an instrument onto the score. Each instrument has a unique sound and by moving the instrument up or down on the score it will change the pitch. To play the track, hit the play button in the top left. To pause the track hit the pause button to the right of the play button. To change the background, click one of the buttons in the top right.</p>
 	</section>
 	</div>
-	<script src="js/main.js"></script>
-	<script>function allowDrop(ev) {
-  ev.preventDefault();
-}
 
-function drag(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
-}
-
-function drop(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData("text");
-  ev.target.appendChild(document.getElementById(data));
-}</script>
 </body>
 </html>
