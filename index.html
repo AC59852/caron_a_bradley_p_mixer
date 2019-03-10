@@ -28,26 +28,22 @@
 	<section>
 		<h2 class="hidden">Music Box</h2>
 		<div id="bck">
-			<div id="buttons">
-			<div id="play"><object type="image/svg+xml" data="images/play_button.svg" width="70" height="70"></object></div>
-			<div id="pause"><object type="image/svg+xml" data="images/pause_button.svg" width="70" height="70"></object></div>
-		</div>
 		</div>
 
 		<div id="musicBox">
-			<div class="dropZone"></div>
-			<div class="dropZone"></div>
-			<div class="dropZone"></div>
+			<div class="dropZone" id="div1"></div>
+			<div class="dropZone" id="div2"></div>
+			<div class="dropZone" id="div3"></div>
 		</div>
 		<div id="iconsBox">
-			<div class="icon"><object type="image/svg+xml" data="images/kickdrum.svg" width="100" height="100"></object></div>
-			<div class="icon"><object type="image/svg+xml" data="images/snare.svg" width="100" height="100"></object></div>
-			<div class="icon"><object type="image/svg+xml" data="images/hihat.svg" width="100" height="100"></object></div>
-			<div class="icon"><object type="image/svg+xml" data="images/horn.svg" width="100" height="100"></object></div>
-			<div class="icon"><object type="image/svg+xml" data="images/bass.svg" width="100" height="100"></object></div>
-			<div class="icon"><object type="image/svg+xml" data="images/keyboard.svg" width="100" height="100"></object></div>
-			<div class="icon"><object type="image/svg+xml" data="images/maracas.svg" width="100" height="100"></object></div>
-			<div class="icon"><object type="image/svg+xml" data="images/triangle.svg" width="100" height="100"></object></div>
+			<div class="icon1" id="icon"><img class="bass1" src="images/kickdrum.svg" id="drag1" alt="" height="100" width="100"></div>
+			<div class="icon2" id="icon"><img id="drag2" src="images/snare.svg" class="triangle" alt="" height="100" width="100"></div>
+			<div class="icon3" id="icon""><img id="drag3" src="images/keyboard.svg"  alt="" height="100" width="100"></div>
+			<div class="icon4" id="icon""><img src="images/hihat.svg" id="drag4"  alt="" height="100" width="100"></div>
+			<div class="icon5" id="icon""><img src="images/triangle.svg" id="drag5"  alt="" height="100" width="100"></div>
+			<div class="icon6" id="icon""><img src="images/bass.svg" id="drag6"  alt="" height="100" width="100"></div>
+			<div class="icon7" id="icon""><img src="images/horn.svg" id="drag7"  alt="" height="100" width="100"></div>
+			<div class="icon8" id="icon""><img src="images/trebleclef.jpg" id="drag6"  alt="" height="100" width="100"></div>
 		</div>
 	</section>
 	<section id="descBox">
@@ -55,6 +51,14 @@
 		<p>To use the mixer drag an instrument onto the score. Each instrument has a unique sound and by moving the instrument up or down on the score it will change the pitch. To play the track, hit the play button in the top left. To pause the track hit the pause button to the right of the play button.</p>
 	</section>
 	</div>
-
+	<audio src="assets/sounds/kickdrum.wav" id="kickdrum" loop></audio>
+	<audio src="assets/sounds/bass.wav" id="bass" loop></audio>
+	<audio src="assets/sounds/triangle.wav" id="triangle1" loop></audio>
+	<audio src="assets/sounds/keyboard.wav" id="keyboard" loop></audio>
+	<audio src="assets/sounds/hihat.wav" id="hihat" loop></audio>
+	<audio src="assets/sounds/snare.wav" id="snare" loop></audio>
+	<audio src="assets/sounds/horn.wav" id="horn" loop></audio>
+	<audio src="assets/sounds/triangle.wav" id="triangle1" loop></audio>
+<script src="js/main.js"></script>
 </body>
 </html>
