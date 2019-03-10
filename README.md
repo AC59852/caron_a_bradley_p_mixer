@@ -6,9 +6,6 @@ Thanks for checking out our music mixer! Create the music you want within **minu
 <br>
 Just drag and drop the icons anywhere within the lines, and hit play! 
 <br>
-Each icon makes a different sound, and each sound is changed in pitch based on which
-<br>
-box you choose to drop the icon. So have fun and upload your mix to our site!
 
 ### Setup
 
