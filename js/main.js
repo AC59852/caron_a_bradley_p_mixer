@@ -46,6 +46,7 @@
 				tri = document.getElementById("drag5"),
 				bass = document.getElementById("drag6"),
 				horn = document.getElementById("drag7");
+				maracas = document.getElementById("drag8");
 
   if (document.getElementById("musicBox").contains(kick)) {
   	document.querySelector("#kickdrum").play();
@@ -68,10 +69,11 @@
   if (document.getElementById("musicBox").contains(horn)) {
   	document.querySelector("#horn").play();
   }
-  if (document.getElementById("musicBox").contains(test)) {
-  	document.querySelector("#snare").play();
+  if (document.getElementById("musicBox").contains(maracas)) {
+  	document.querySelector("#maracas").play();
   }
 		});
+
 	});
 
 })();
