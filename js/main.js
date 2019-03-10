@@ -33,6 +33,7 @@
 			let prevDrop = e.target;
 				while (prevDrop !== 0 && !prevDrop.classList.contains("dropZone")) {
 				prevDrop = prevDrop.parentNode;
+				return false;
 			}
 
  			let piece = e.dataTransfer.getData("text/plain");
