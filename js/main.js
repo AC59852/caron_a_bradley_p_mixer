@@ -1,10 +1,7 @@
 (() => {
 
 	// // set up the puzzle pieces and boards
-	const pieces = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
-
-	let piecesBoard = document.querySelector("#iconsBox"),
-		 dropZones = document.querySelectorAll('.dropZone');
+	let	dropZones = document.querySelectorAll('.dropZone');
 		
 		initDrag();
 
@@ -12,7 +9,7 @@
 	function initDrag() {
 		piecesBoard.querySelectorAll('img').forEach(img => {
 			img.addEventListener("dragstart", function(e) {
-				console.log('draggin..........')
+				console.log('draggin...')
 
 				e.dataTransfer.setData("text/plain", this.id);
 			});
