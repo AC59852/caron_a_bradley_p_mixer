@@ -1,13 +1,14 @@
 (() => {
 
-	// // set up the puzzle pieces and boards
-	let	dropZones = document.querySelectorAll('.dropZone');
+	
+	let iconHolder = document.querySelector("#iconsBox"),
+		 dropZones = document.querySelectorAll('.dropZone');
 		
 		initDrag();
 
 	//handling drag n drop functionality
 	function initDrag() {
-		piecesBoard.querySelectorAll('img').forEach(img => {
+		iconHolder.querySelectorAll('img').forEach(img => {
 			img.addEventListener("dragstart", function(e) {
 				console.log('draggin...')
 
@@ -33,8 +34,8 @@
 				return false;
 			}
 
- 			let piece = e.dataTransfer.getData("text/plain");
-			e.target.appendChild(document.querySelector(`#${piece}`));
+ 			let icons = e.dataTransfer.getData("text/plain");
+			e.target.appendChild(document.querySelector(`#${icons}`));
 
 			let kick = document.getElementById("drag1"),
 				snare = document.getElementById("drag2"),
@@ -43,7 +44,6 @@
 				tri = document.getElementById("drag5"),
 				bass = document.getElementById("drag6"),
 				horn = document.getElementById("drag7");
-				maracas = document.getElementById("drag8");
 
   if (document.getElementById("musicBox").contains(kick)) {
   	document.querySelector("#kickdrum").play();
@@ -66,11 +66,10 @@
   if (document.getElementById("musicBox").contains(horn)) {
   	document.querySelector("#horn").play();
   }
-  if (document.getElementById("musicBox").contains(maracas)) {
-  	document.querySelector("#maracas").play();
+  if (document.getElementById("musicBox").contains(test)) {
+  	document.querySelector("#snare").play();
   }
 		});
-
 	});
 
 })();
