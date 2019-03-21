@@ -136,3 +136,16 @@ ul, li, a, p
 	text-align: center;
 	padding-top: 30px;
 }
+
+@keyframes keyPress {
+	0% {fill: blue;}
+	100% {fill: blue;}
+}
+
+
+
+#icon1, #icon2, #icon3, #icon4, #icon5, #icon6, #icon7, #icon8 {
+	display: inline-block;
+	max-width: 100px;
+	max-height: 100px;
+} 
