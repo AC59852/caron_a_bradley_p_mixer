@@ -15,11 +15,6 @@ ul, li, a, p
 	font-family: 'Montserrat', sans-serif;
 }
 
-#instructions
-{
-
-}
-
 #logo
 {
 	margin-top: -30px;
@@ -34,27 +29,33 @@ ul, li, a, p
     justify-content: space-evenly;
 }
 
+#mainNav ul li a {
+	color: white;
+}
+
 #mainNav ul li
 {
 	font-size: 20px;
 	margin-top: 50px;
 }
 
-#bck
-{
-	background-image: url(../images/bck3.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
+#playArea {
 	width: 85%;
 	height: 900px;
 	margin: 0 auto;
+}
+
+#bck
+{
+	background-image: url(../images/bck3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #musicBox
 {
 	background-color: white;
 	width: 70%;
-	height: 300px;
 	margin: -800px auto;
 
 }
@@ -63,7 +64,8 @@ ul, li, a, p
 {
 	height: 100px;
 	border: 3px solid black;
-	background-color: white; 
+	background-color: white;
+	overflow: hidden;
 
 }
 
@@ -87,8 +89,9 @@ ul, li, a, p
 
 #iconsBox
 {
-	background-color: #333333;
+	background-color: rgba(222,333,255,0.4);
 	width: 70%;
+	border: solid 2px rgba(0,0,0,0.4);
 	height: 100px;
 	margin: 840px auto 60px;
 	padding-top: 20px;
@@ -100,8 +103,9 @@ ul, li, a, p
 
 #descBox
 {
-	background-color: #333333;
-	width: 55%;
+	background-color: rgba(222,333,255,0.4);
+	width: 70%;
+	border: solid 2px rgba(0,0,0,0.4);
 	height: 150px;
 	margin: 0 auto;
 	padding-bottom: 50px;
@@ -109,12 +113,12 @@ ul, li, a, p
 
 #descBox p 
 {
-	color: white;
+	color: black;
 	padding-top: 20px;
 	padding-bottom: 50px;	
 	text-align: left;
 	margin-left: 15px !important;
-	font-size: 30px;
+	font-size: 1.4vw;
 	margin: 0 auto;
 	letter-spacing: 0.3px;
 	line-height: 45px;
@@ -126,7 +130,9 @@ ul, li, a, p
 #descBox h2
 {
 	font-size: 26px;
-	color: white;
+	color: black;
+	font-weight: bold;
+	letter-spacing: 1px;
 	margin-left: 15px;
 	padding-top: 10px;
 

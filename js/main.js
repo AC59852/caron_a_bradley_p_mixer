@@ -3,7 +3,10 @@
 	
 	let iconHolder = document.querySelector("#iconsBox"),
 		 dropZones = document.querySelectorAll('.dropZone'),
-		 audio = document.querySelectorAll('audio');
+		 audio = document.querySelectorAll('audio'),
+		 dropZoneTop = document.querySelector("#div1"),
+		 dropZoneMiddle = document.querySelector("#div2"),
+		 dropZoneBottom = document.querySelector("#div3");
 		
 		initDrag();
 
@@ -30,20 +33,22 @@
 			let icons = e.dataTransfer.getData("text/plain");
 			e.preventDefault();
 			console.log(`${icons} was dropped`);
+			let newSound = document.createElement("audio");
+				newSound.src = `assets/sounds/${icons}.wav`;
+
+				e.target.appendChild(document.querySelector(`#${icons}`).cloneNode(true));
 
 			let prevDrop = e.target;
 				while (prevDrop !== 0 && !prevDrop.classList.contains("dropZone")) {
 				prevDrop = prevDrop.parentNode;
 				return false;
 			}
-			e.target.appendChild(document.querySelector(`#${icons}`));
 
-			audio.src = `assets/sounds/${icons}.wav`;
-				audio.play();
-
-			if (dropZones.classList.contains(`${icons}`)) {
-				audio.play();
-			}
+				newSound.play();
+		newSound.addEventListener('ended', function() {
+    		this.currentTime = 0;
+    			this.play();
+    		});
 		});
 	});
 })();
