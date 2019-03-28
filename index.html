@@ -7,7 +7,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat%7CNanum+Gothic" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body id="bck">
 	<div id="container">
 	<header>
 	<nav id="mainNav">
@@ -17,7 +17,7 @@
                 <li><a href="about.html">ABOUT</a></li>
                 <li><a href="projects.html">OUR PROJECTS</a></li>
                 <li><a href="fundraising.html">FUNDRAISERS</a></li>
-                <li><object id="logo" height="100" width="100" data="images/trebleclef.jpg"></object></li>
+                <li><object id="logo" height="150" width="150" data="images/logo.svg"></object></li>
                 <li><a href="pastevents.html">PAST EVENTS</a></li>
                 <li><a href="partners.html">PARTNERS</a></li>
                 <li><a href="newsletters.html">NEWSLETTER</a></li>
@@ -27,39 +27,72 @@
 </header>
 	<section>
 		<h2 class="hidden">Music Box</h2>
-		<div id="bck">
+		<div id="playArea">
 		</div>
 
 		<div id="musicBox">
-			<div class="dropZone" id="div1"></div>
+			<div class="dropZone dropZoneTop" id="div1"></div>
 			<div class="dropZone" id="div2"></div>
 			<div class="dropZone" id="div3"></div>
 		</div>
 		<div id="iconsBox">
-			<div class="icon1" id="icon"><img class="bass1" src="images/kickdrum.svg" id="drag1" alt="" height="100" width="100"></div>
-			<div class="icon2" id="icon"><img id="drag2" src="images/snare.svg" class="triangle" alt="" height="100" width="100"></div>
-			<div class="icon3" id="icon""><img id="drag3" src="images/keyboard.svg"  alt="" height="100" width="100"></div>
-			<div class="icon4" id="icon""><img src="images/hihat.svg" id="drag4"  alt="" height="100" width="100"></div>
-			<div class="icon5" id="icon""><img src="images/triangle.svg" id="drag5"  alt="" height="100" width="100"></div>
-			<div class="icon6" id="icon""><img src="images/bass.svg" id="drag6"  alt="" height="100" width="100"></div>
-			<div class="icon7" id="icon""><img src="images/horn.svg" id="drag7"  alt="" height="100" width="100"></div>
-			<div class="icon8" id="icon""><img src="images/maracas.svg" id="drag8"  alt="" height="100" width="100"></div>
+			<div class="icon1 kickdrum" id="drag1"><svg id="kickdrum" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 234.4 249.68"><defs><style>#kickdrum{height: 100px;}.kDcls-1{fill:#f9f9fa;stroke-width:10px;}.kDcls-1,.kDcls-2,.kDcls-4,.kDcls-5{stroke:#231f20;}.kDcls-1,.kDcls-2,.kDcls-3,.kDcls-4,.kDcls-5{stroke-miterlimit:10;}.kDcls-2,.kDcls-5{fill:#fff;}.kDcls-2,.kDcls-3,.kDcls-4{stroke-width:4px;}.kDcls-3{fill:none;stroke:#322011;}.kDcls-4{fill:#ffcc7c;}.kDcls-5{stroke-width:6px;}</style></defs><title>kickdrum</title><circle id="drum" class="kDcls-1" cx="116.33" cy="105.22" r="100.22"/><polyline id="bottom" class="kDcls-2" points="94.62 203.07 94.62 169.93 137.14 169.93 137.14 203.07"/><line id="neck" class="kDcls-2" x1="116.33" y1="205.43" x2="116.33" y2="136.7"/><circle id="drum-2" data-name="drum" class="kDcls-3" cx="116.38" cy="106.31" r="96.76"/><ellipse id="pedal" class="kDcls-4" cx="116.12" cy="130.94" rx="8.1" ry="10.85"/><polyline id="leg_2" data-name="leg 2" class="kDcls-5" points="35.71 164.74 7.12 246.68 0 246.68 16.11 246.68"/><polyline id="leg_1" data-name="leg 1" class="kDcls-5" points="198.7 164.74 227.28 246.68 234.4 246.68 218.29 246.68"/></svg></div>
+			
+			<div class="icon2 snare" id="drag2"><svg id="snare" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 537.93 567.12"><defs><style>#snare{height: 100px; width: 100px;} .cls-1{fill:#fff8dc;stroke:#ff002b;stroke-width:24px;}.cls-1,.cls-2,.cls-3{stroke-miterlimit:10;}.cls-2{fill:none;stroke-width:19px;}.cls-2,.cls-3{stroke:#000;}.cls-3{fill:#f9ca80;stroke-width:6px;}</style></defs><title>snare</title><circle id="snare_inside" data-name="snare inside" class="cls-1" cx="269.57" cy="273.01" r="231.03"/><circle id="snare_outside" data-name="snare outside" class="cls-2" cx="267.56" cy="273.89" r="245.06"/><rect id="small_circle_8" data-name="small circle 8" x="71.99" y="75.22" width="32.21" height="32.21" rx="14.84" transform="translate(-33.86 56.29) rotate(-30)"/><rect id="small_circle_7" data-name="small circle 7" x="251.46" y="0.06" width="32.21" height="32.21" rx="14.84" transform="translate(1.04 -12.43) rotate(2.67)"/><rect id="small_circle_6" data-name="small circle 6" x="429.04" y="75.22" width="32.21" height="32.21" rx="14.84" transform="translate(13.97 234.81) rotate(-30)"/><rect id="small_circle_5" data-name="small circle 5" x="0.23" y="257.67" width="32.21" height="32.21" rx="14.84" transform="translate(-53.04 8.43) rotate(-11.24)"/><rect id="small_circle_4" data-name="small circle 4" x="71.99" y="445.61" width="32.21" height="32.21" rx="14.84" transform="matrix(0.87, -0.5, 0.5, 0.87, -219.05, 105.91)"/><rect id="small_circle_3" data-name="small circle 3" x="251.46" y="514.43" width="32.21" height="32.21" rx="14.84"/><rect id="small_circle_2" data-name="small circle 2" x="427.77" y="443.54" width="32.21" height="32.21" rx="14.84"/><rect id="small_circle_1" data-name="small circle 1" x="505.49" y="255.82" width="32.21" height="32.21" rx="14.84" transform="translate(-43 106.87) rotate(-11.24)"/><rect class="cls-3" x="171.8" y="212.86" width="29.78" height="335.52" rx="14.89" transform="translate(323.82 -20.53) rotate(45)"/><rect class="cls-3" x="181.29" y="273.39" width="29.78" height="335.52" rx="14.89" transform="translate(369.4 -9.51) rotate(45)"/></svg></div>
+
+			<div class="icon3 keyboard" id="drag3"><svg id="keyboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 172.71 82.12"><defs><style>#keyboard{height: 80px;}.kBcls-1{fill:#fff;stroke-width:3px;}.kBcls-1,.kBcls-4{stroke:#231f20;}.kBcls-1,.kBcls-2,.kBcls-3,.kBcls-4,.kBcls-5,.kBcls-6,.kBcls-7,.kBcls-8{stroke-miterlimit:10;}.kBcls-2{fill:#327338;}.kBcls-2,.kBcls-3,.kBcls-5,.kBcls-6,.kBcls-7,.kBcls-8{stroke:#000;}.kBcls-3{fill:#f6d30c;}.kBcls-4{fill:#55b247;}.kBcls-5{fill:#3c8ac9;}.kBcls-6{fill:#c11f4d;}.kBcls-7{fill:#db9127;}.kBcls-8{fill:#6d256f;}</style></defs><title>keyboard</title><rect id="body" class="kBcls-1" x="1.5" y="1.5" width="169.71" height="79.12" rx="12"/><rect id="key_9" data-name="key 9" x="13.46" y="24.84" width="6.33" height="32.04" rx="3.16"/><rect id="key_8" data-name="key 8" x="30.04" y="24.84" width="6.33" height="32.04" rx="3.16"/><rect id="key_7" data-name="key 7" x="44.64" y="24.84" width="6.33" height="32.04" rx="3.16"/><rect id="key_6" data-name="key 6" x="62.65" y="24.84" width="6.33" height="32.04" rx="3.16"/><rect id="key_5" data-name="key 5" x="81.65" y="24.84" width="6.33" height="32.04" rx="3.16"/><rect id="key_4" data-name="key 4" x="98.27" y="24.84" width="6.33" height="32.04" rx="3.16"/><rect id="key_3" data-name="key 3" x="115.06" y="24.84" width="6.33" height="32.04" rx="3.16"/><rect id="key_2" data-name="key 2" x="130.09" y="24.84" width="6.33" height="32.04" rx="3.16"/><rect id="key_1" data-name="key 1" x="146.36" y="24.84" width="6.33" height="32.04" rx="3.16"/><line id="top_half" data-name="top half" class="kBcls-1" x1="1.5" y1="25.63" x2="171.21" y2="25.63"/><circle id="button_6" data-name="button 6" class="kBcls-2" cx="19.69" cy="13.27" r="3.07"/><circle id="button_5" data-name="button 5" class="kBcls-3" cx="36.36" cy="13.27" r="3.07"/><line id="mixer_string" class="kBcls-1" x1="84.82" y1="5.19" x2="84.82" y2="21.02"/><rect id="mixer" class="kBcls-4" x="83.23" y="9.21" width="3.16" height="8.11" transform="translate(71.55 98.08) rotate(-90)"/><circle id="button_4" data-name="button 4" class="kBcls-5" cx="53.79" cy="13.1" r="3.07"/><circle id="button_3" data-name="button 3" class="kBcls-6" cx="111.51" cy="13.27" r="3.07"/><circle id="button_2" data-name="button 2" class="kBcls-7" cx="129.24" cy="13.27" r="3.07"/><circle id="button_1" data-name="button 1" class="kBcls-8" cx="148.35" cy="13.27" r="3.07"/></svg></div>
+			<div class="icon4 hihat" id="drag4"><svg id="hihat" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 104.07 202.8"><defs><style>#hihat{height: 100px;}.hHcls-1{fill:none;}.hHcls-1,.hHcls-2,.hHcls-3,.hHcls-4{stroke:#231f20;stroke-miterlimit:10;}.hHcls-1,.hHcls-4{stroke-width:3px;}.hHcls-2{fill:#f7d071;}.hHcls-2,.hHcls-3{stroke-width:2px;}.hHcls-3{fill:#f7d070;}.hHcls-4{fill:#c2c1c0;}</style></defs><title>hihat</title><polyline id="leg_2" data-name="leg 2" class="hHcls-1" points="52.35 111.96 52.35 169.19 19.87 201.68"/><line id="body" class="hHcls-1" x1="52.35" y1="111.96" x2="52.35" y2="54.72"/><ellipse id="cymbal_2" data-name="cymbal 2" class="hHcls-2" cx="52.03" cy="47.6" rx="51.03" ry="12.66"/><ellipse id="cymbal_1" data-name="cymbal 1" class="hHcls-3" cx="52.03" cy="39.17" rx="51.03" ry="12.66"/><line id="top" class="hHcls-1" x1="52.14" y1="39.17" x2="52.14"/><rect id="support" class="hHcls-4" x="49.19" y="111.96" width="6.33" height="14.04" rx="3.16"/><polyline id="leg_1" data-name="leg 1" class="hHcls-1" points="84.9 201.74 52.35 169.19 52.35 195.3"/></svg></div>
+
+			<div class="icon5 triangle" id="drag5"><?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="triangle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 197.412 197.412" style="enable-background:new 0 0 197.412 197.412;" xml:space="preserve"><style>#triangle{height: 100px;}</style>
+<path d="M170.063,185.307H14.38c-5.19,0-9.838-2.684-12.434-7.179s-2.595-9.862,0-14.357L79.788,28.945
+	c2.595-4.495,7.243-7.178,12.434-7.178s9.838,2.683,12.434,7.178l24.715,42.809l57.91-57.91c1.121-1.121,2.611-1.738,4.196-1.738
+	c1.586,0,3.076,0.617,4.197,1.738c1.12,1.12,1.737,2.61,1.737,4.196c0,1.585-0.617,3.075-1.738,4.195l-60.159,60.159l27.005,46.773
+	c0.841,1.457,1.044,3.216,0.557,4.825c-0.487,1.61-1.632,2.962-3.14,3.708c-0.839,0.415-1.775,0.635-2.707,0.635
+	c-2.178,0-4.206-1.171-5.295-3.056l-25.367-43.938l-50.402,50.402c0.914,3.776-0.157,7.843-2.889,10.661
+	c-2.116,2.182-5.112,3.434-8.22,3.434c0,0,0,0,0,0c-2.949,0-5.728-1.09-7.826-3.068c-2.271-2.141-3.547-5.036-3.593-8.151
+	c-0.046-3.118,1.143-6.049,3.347-8.253c2.154-2.154,5.02-3.341,8.07-3.341c0.921,0,1.832,0.109,2.719,0.325l52.649-52.649
+	L94.226,35.325c-0.603-1.044-1.602-1.157-2.004-1.157s-1.401,0.113-2.004,1.157L13.258,168.621c-0.603,1.044-0.201,1.967,0,2.314
+	c0.201,0.348,0.798,1.157,2.004,1.157h153.919c1.205,0,1.803-0.81,2.004-1.157c0.2-0.348,0.603-1.271,0-2.314l-3.946-6.833
+	c-0.841-1.458-1.043-3.217-0.556-4.827c0.487-1.609,1.631-2.96,3.139-3.706c0.839-0.415,1.775-0.635,2.708-0.635
+	c2.178,0,4.206,1.172,5.295,3.057l4.673,8.094c2.595,4.495,2.595,9.862-0.001,14.357
+	C179.902,182.623,175.254,185.307,170.063,185.307z M92.222,25.767c-3.744,0-7.098,1.936-8.97,5.178L5.41,165.771
+	c-1.872,3.243-1.872,7.115,0,10.357c1.872,3.243,5.226,5.179,8.97,5.179h155.683c3.744,0,7.098-1.936,8.97-5.179
+	c1.872-3.242,1.872-7.114,0-10.357l-4.673-8.094c-0.538-0.933-1.789-1.319-2.764-0.837c-0.529,0.262-0.914,0.717-1.085,1.28
+	c-0.171,0.564-0.103,1.157,0.192,1.669l3.945,6.832c1.142,1.977,1.142,4.337,0,6.314c-1.142,1.977-3.186,3.157-5.468,3.157H15.262
+	c-2.283,0-4.327-1.181-5.468-3.157c-1.142-1.978-1.142-4.338,0-6.314L86.754,33.325c1.141-1.977,3.186-3.157,5.468-3.157
+	s4.327,1.181,5.468,3.157l25.663,44.447l3.09-3.09l-25.251-43.737C99.319,27.702,95.966,25.767,92.222,25.767z M65.055,137.025
+	c-1.981,0-3.843,0.771-5.242,2.169c-1.433,1.434-2.206,3.339-2.176,5.365c0.03,2.025,0.86,3.908,2.337,5.301
+	c1.353,1.275,3.157,1.979,5.082,1.979h0c2.032,0,3.98-0.809,5.348-2.219c1.975-2.036,2.612-5.078,1.625-7.751
+	c-0.271-0.732-0.09-1.556,0.462-2.107L192.845,19.407c0.365-0.365,0.566-0.851,0.566-1.367c0-0.518-0.201-1.003-0.566-1.368
+	c-0.732-0.73-2.004-0.73-2.736,0l-59.57,59.571c-0.053,0.069-0.11,0.136-0.174,0.198l-6.019,6.019
+	c-0.063,0.063-0.13,0.122-0.2,0.176l-54.391,54.391c-0.552,0.552-1.375,0.733-2.107,0.462
+	C66.817,137.18,65.944,137.025,65.055,137.025z M129.505,88.429l25.894,44.85c0.538,0.932,1.784,1.32,2.765,0.837
+	c0.528-0.262,0.914-0.717,1.085-1.281c0.17-0.564,0.102-1.156-0.193-1.667l-26.459-45.829L129.505,88.429z"/>
+</svg>
+</div>
+			<div class="icon6 bass" id="drag6"><svg id="bass" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 307.14 364.76"><defs><style>#bass{height: 100px;}.bGcls-1{fill:#a87b48;stroke-width:4px;}.bGcls-1,.bGcls-2,.bGcls-3,.bGcls-4,.bGcls-5,.bGcls-6,.bGcls-7{stroke:#231f20;stroke-miterlimit:10;}.bGcls-2{fill:#674a32;}.bGcls-2,.bGcls-6{stroke-width:3px;}.bGcls-3{fill:#d3d2cd;}.bGcls-3,.bGcls-4,.bGcls-5,.bGcls-7{stroke-width:2px;}.bGcls-4{fill:#fff;}.bGcls-5{fill:#d3d1cd;}.bGcls-7{fill:#725538;}</style></defs><title>bass</title><path id="body" class="bGcls-1" d="M188.28,230.29c0-34.32-29.52-62.14-65.94-62.14-34.3,0-62.47,24.69-65.63,56.23-32,7.89-55.71,35.36-55.71,68,0,38.85,33.42,70.34,74.64,70.34s74.64-31.49,74.64-70.34c0-1.93-.1-3.84-.27-5.73C172.61,276.83,188.28,255.29,188.28,230.29Z" transform="translate(1)"/><rect id="bridge" class="bGcls-2" x="205.76" y="25.83" width="18.2" height="174.15" transform="translate(116.98 -108.76) rotate(38.24)"/><rect id="strap_3" data-name="strap 3" class="bGcls-3" x="35.28" y="296.62" width="62.11" height="12.66" transform="translate(202.74 23.95) rotate(38.24)"/><circle id="mixer_2" data-name="mixer 2" class="bGcls-4" cx="117.41" cy="330.6" r="3.46"/><circle id="mixer_1" data-name="mixer 1" class="bGcls-4" cx="133.18" cy="310.13" r="3.46"/><rect id="twister_4" data-name="twister 4" class="bGcls-5" x="249.1" y="26.29" width="5.8" height="10.55" transform="translate(72.23 209.96) rotate(-51.76)"/><rect id="twister_3" data-name="twister 3" class="bGcls-3" x="255.87" y="17.7" width="5.8" height="10.55" transform="translate(81.56 212) rotate(-51.76)"/><rect id="twister_2" data-name="twister 2" class="bGcls-3" x="261.81" y="10.16" width="5.8" height="10.55" transform="translate(89.74 213.79) rotate(-51.76)"/><rect id="twister_1" data-name="twister 1" class="bGcls-3" x="268.5" y="1.67" width="5.8" height="10.55" transform="translate(98.96 215.81) rotate(-51.76)"/><rect id="head" class="bGcls-6" x="260.67" y="3.23" width="33.89" height="60.08" rx="12" transform="translate(81.16 -164.69) rotate(38.24)"/><circle id="button_1" data-name="button 1" class="bGcls-3" cx="261.12" cy="40.75" r="3.46"/><circle id="button_2" data-name="button 2" class="bGcls-3" cx="270.42" cy="29.71" r="3.46"/><circle id="button_3" data-name="button 3" class="bGcls-3" cx="278.61" cy="18.07" r="3.46"/><circle class="bGcls-7" cx="127.63" cy="224.86" r="24.3"/></svg></div>
+
+			<div class="icon7 horn" id="drag7"><svg id="horn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 254.88 276.97"><defs><style>#horn{height: 100px;}.Hcls-1{fill:#f4c815;stroke:#030202;stroke-width:4px;}.Hcls-1,.Hcls-2,.Hcls-3,.Hcls-4{stroke-miterlimit:10;}.Hcls-2,.Hcls-3{fill:#fff;}.Hcls-2{stroke:#0c0508;}.Hcls-3,.Hcls-4{stroke:#000;}.Hcls-4{fill:#f9f9fa;}</style></defs><title>horn</title><path id="body" class="Hcls-1" d="M249.18,27.78,234,14.5,218.73,1.22c-3-2.66-8.1-.72-9.09,3.49l-4.94,21-.6,2.56a4.67,4.67,0,0,1-1.07,2L1.19,254.5A4.63,4.63,0,0,0,1.53,261l11.93,10.74a4.64,4.64,0,0,0,6.55-.34l201.6-223.9a4.65,4.65,0,0,1,1.78-1.22l3.4-1.31L247,37.26C251,35.71,252.23,30.44,249.18,27.78Z" transform="translate(2 2)"/><circle id="hole_5" data-name="hole 5" class="Hcls-2" cx="59.61" cy="211.95" r="4.94"/><circle id="hole_4" data-name="hole 4" class="Hcls-3" cx="86.7" cy="181.9" r="4.94"/><circle id="hole_3" data-name="hole 3" class="Hcls-4" cx="111.83" cy="153.01" r="4.94"/><circle id="hole_2" data-name="hole 2" class="Hcls-3" cx="137.15" cy="125.53" r="4.94"/><circle id="hole_6" data-name="hole 6" class="Hcls-3" cx="158.97" cy="102.21" r="4.94"/><rect id="white_strip" class="Hcls-3" x="11.16" y="246.39" width="7.32" height="23.96" transform="translate(-184.42 97.65) rotate(-47.76)"/><circle id="hole_1" data-name="hole 1" class="Hcls-3" cx="178.43" cy="82.41" r="4.94"/></svg></div>
+			<div class="icon8 maracas" id="drag8"><svg id="maracas" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470.28 598.53"><defs><style>#maracas{height: 100px;}.mAcls-1{fill:#c9a96f;}.mAcls-2{fill:#ce3649;}.mAcls-3,.mAcls-4,.mAcls-5,.mAcls-6,.mAcls-7,.mAcls-9{fill:none;stroke-miterlimit:10;stroke-width:4px;}.mAcls-3{stroke:#f9db03;}.mAcls-4{stroke:#5bd84a;}.mAcls-5{stroke:#3d50d8;}.mAcls-6{stroke:#f189f7;}.mAcls-7{stroke:#ff8224;}.mAcls-8{fill:#fcbd0b;}.mAcls-9{stroke:#ce3649;}</style></defs><title>maracas</title><path class="mAcls-1" d="M272.82,593.87a27.5,27.5,0,0,1-25.63-17.65L147.27,311.89a27.31,27.31,0,0,1,25.48-37,27.51,27.51,0,0,1,25.64,17.66l99.92,264.32a27.31,27.31,0,0,1-25.49,37Z"/><path d="M172.76,272.91v4h0a25.51,25.51,0,0,1,23.76,16.37L296.44,557.6a25.34,25.34,0,0,1-14.74,32.64,25,25,0,0,1-8.88,1.63,25.5,25.5,0,0,1-23.76-16.36L149.14,311.18a25.31,25.31,0,0,1,23.61-34.27v-4m0,0a29,29,0,0,0-10.29,1.89h0a29.41,29.41,0,0,0-17.06,37.8l99.92,264.33a29.43,29.43,0,0,0,27.5,18.94,29.09,29.09,0,0,0,10.3-1.88h0a29.42,29.42,0,0,0,17.06-37.8L200.26,291.86a29.44,29.44,0,0,0-27.51-18.95Z"/><path class="mAcls-2" d="M138.82,309.67c-24.78,0-51-12-74-33.77C41.47,253.69,22.7,222.26,12,187.41c-25.54-83-.27-164.7,56.33-182.11A75.13,75.13,0,0,1,90.42,2c24.78,0,51,12,74,33.78,23.38,22.21,42.15,53.63,52.87,88.48,12.41,40.34,13.32,81.55,2.54,116-10.68,34.22-31.59,57.68-58.87,66.07A75.13,75.13,0,0,1,138.82,309.67Z"/><path d="M90.43,4c24.25,0,50,11.8,72.58,33.23,23.13,22,41.72,53.1,52.34,87.62,12.29,40,13.2,80.74,2.55,114.85-10.49,33.57-30.93,56.57-57.56,64.76a73.12,73.12,0,0,1-21.52,3.21c-24.26,0-50-11.8-72.59-33.22-23.13-22-41.72-53.1-52.34-87.62C1.6,146.87.69,106.08,11.34,72,21.83,38.4,42.27,15.4,68.9,7.21A73.14,73.14,0,0,1,90.43,4h0m0-4a76.86,76.86,0,0,0-22.7,3.39C10,21.15-15.84,103.81,10.06,188,32.63,261.35,87,311.67,138.82,311.67a77.18,77.18,0,0,0,22.7-3.38c57.74-17.77,83.56-100.42,57.65-184.62C196.61,50.32,142.24,0,90.42,0Z"/><path class="mAcls-3" d="M4.6,106.91S59.48-3.2,160.6,34.8"/><path class="mAcls-4" d="M5.66,153.91S73.18,43.8,197.6,81.8"/><path class="mAcls-5" d="M23.6,212.91s68.95-110.11,196-72.11"/><path class="mAcls-6" d="M50.6,257.91s61.92-110.11,176-72.11"/><path class="mAcls-7" d="M86.6,289.8s46.09-74.21,131-48.6"/><path class="mAcls-1" d="M168.11,596.53a27.36,27.36,0,0,1-24.61-39L258.08,316a27.51,27.51,0,0,1,24.78-15.6A26.86,26.86,0,0,1,294.48,303a27.35,27.35,0,0,1,13,36.4L192.88,580.93a27.51,27.51,0,0,1-24.77,15.6Z"/><path d="M282.86,302.36a25.35,25.35,0,0,1,22.79,36.16L191.07,580.07a25.5,25.5,0,0,1-23,14.46,25.35,25.35,0,0,1-22.79-36.16L259.89,316.81a25.5,25.5,0,0,1,23-14.45m0-4a29.41,29.41,0,0,0-26.58,16.74L141.7,556.65a29.4,29.4,0,0,0,13.92,39.06h0a29.09,29.09,0,0,0,12.48,2.82,29.44,29.44,0,0,0,26.59-16.74L309.27,340.24a29.42,29.42,0,0,0-13.93-39.07h0a29.08,29.08,0,0,0-12.48-2.81Z"/><path class="mAcls-8" d="M322.55,338.12a75.85,75.85,0,0,1-28.26-5.35c-55-22-73.52-105.45-41.32-186.1,26.29-65.82,79.7-111.79,129.9-111.79a75.84,75.84,0,0,1,28.25,5.35c55,22,73.53,105.45,41.32,186.1-26.29,65.82-79.7,111.79-129.89,111.79Z"/><path d="M382.86,36.88a73.79,73.79,0,0,1,27.52,5.21c25.87,10.33,44.37,34.92,52.09,69.23,7.84,34.86,3.62,75.44-11.89,114.27-26,65.08-78.64,110.53-128,110.53A73.73,73.73,0,0,1,295,330.91C269.16,320.58,250.66,296,243,261.67c-7.84-34.85-3.62-75.43,11.88-114.26,26-65.08,78.64-110.53,128-110.53m0-4C333,32.88,278.37,77.7,251.12,145.93c-32.67,81.81-13.67,166.29,42.43,188.69a77.73,77.73,0,0,0,29,5.5c49.92,0,104.5-44.82,131.75-113C487,145.26,468,60.78,411.86,38.37a77.88,77.88,0,0,0-29-5.49Z"/><path class="mAcls-9" d="M466.34,146.69S420.61,32.48,316.73,62.12"/><path class="mAcls-4" d="M461.47,193.45S403.13,78.21,276,106"/><path class="mAcls-5" d="M438.78,250.8S379,135.44,249.3,163"/><path class="mAcls-6" d="M408.2,293.45s-52.74-114.79-169.54-86.2"/><path class="mAcls-7" d="M369.73,322.3s-39.9-77.71-126.61-59.1"/></svg></div>
 		</div>
 	</section>
 	<section id="descBox">
 		<h2 id="instructions">Instructions:</h2>
-		<p>To use the mixer drag an instrument on to the sheet. Each instrument has a unique sound and will automatically play once dragged on to the sheet.</p>
+		<p>To use the mixer drag an instrument on to the sheet. Drag as many instruments onto the sheet as you wish. There are three bars for when one or multiple bars gets full. Each instrument has a unique sound and will automatically play once dragged on to the sheet.
+		</p>
 	</section>
 	</div>
-	<audio src="assets/sounds/kickdrum.wav" id="kickdrum" loop></audio>
-	<audio src="assets/sounds/bass.wav" id="bass" loop></audio>
-	<audio src="assets/sounds/triangle.wav" id="triangle1" loop></audio>
-	<audio src="assets/sounds/keyboard.wav" id="keyboard" loop></audio>
-	<audio src="assets/sounds/hihat.wav" id="hihat" loop></audio>
-	<audio src="assets/sounds/snare.wav" id="snare" loop></audio>
-	<audio src="assets/sounds/horn.wav" id="horn" loop></audio>
-	<audio src="assets/sounds/triangle.wav" id="triangle1" loop></audio>
-	<audio src="assets/sounds/maracas.wav" id="maracas" loop></audio>
+	<audio src="assets/sounds/kickdrum.wav" id="kickdrumA" loop></audio>
+	<audio src="assets/sounds/bass.wav" id="bassA" loop></audio>
+	<audio src="assets/sounds/triangle.wav" id="triangle1A" loop></audio>
+	<audio src="assets/sounds/keyboard.wav" id="keyboardA" loop></audio>
+	<audio src="assets/sounds/hihat.wav" id="hihatA" loop></audio>
+	<audio src="assets/sounds/snare.wav" id="snareA" loop></audio>
+	<audio src="assets/sounds/horn.wav" id="hornA" loop></audio>
+	<audio src="assets/sounds/maracas.wav" id="maracasA" loop></audio>
 <script src="js/main.js"></script>
 </body>
 </html>

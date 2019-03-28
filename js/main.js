@@ -1,16 +1,19 @@
 (() => {
 
+// All of our arrays that aren't specifically needed for 1-2 things
 	
 	let iconHolder = document.querySelector("#iconsBox"),
-		 dropZones = document.querySelectorAll('.dropZone');
+		 dropZones = document.querySelectorAll('.dropZone'),
+		 audio = document.querySelectorAll('audio');
 		
 		initDrag();
 
 	//handling drag n drop functionality
 	function initDrag() {
-		iconHolder.querySelectorAll('img').forEach(img => {
-			img.addEventListener("dragstart", function(e) {
-				console.log('draggin...')
+		iconHolder.querySelectorAll('svg').forEach(div => {
+			div.addEventListener("dragstart", function(e) {
+				console.log('draggin...');
+
 
 				e.dataTransfer.setData("text/plain", this.id);
 			});
@@ -25,8 +28,22 @@
 		});
 
 		zone.addEventListener("drop", function(e) {
+			let icons = e.dataTransfer.getData("text/plain");
 			e.preventDefault();
-			console.log('ouch! you dropped me!');
+			// logging that the instrument icon was dropped
+			console.log(`${icons} was dropped`);
+
+			// creating a new audio element specific to the instrument
+			let newSound = document.createElement("audio");
+				newSound.src = `assets/sounds/${icons}.wav`;
+
+				// this creates a copy/clone of the original icon, allowing for multiple instruments to be on the page at once
+				// We went with this idea after we couldn't get the libraries working the way we wanted with pitch changing
+				// this allows us to make use out of all three bars.
+
+				e.target.appendChild(document.querySelector(`#${icons}`).cloneNode(true));
+
+				// overly complicated stack prevention
 
 			let prevDrop = e.target;
 				while (prevDrop !== 0 && !prevDrop.classList.contains("dropZone")) {
@@ -34,42 +51,13 @@
 				return false;
 			}
 
- 			let icons = e.dataTransfer.getData("text/plain");
-			e.target.appendChild(document.querySelector(`#${icons}`));
-
-			let kick = document.getElementById("drag1"),
-				snare = document.getElementById("drag2"),
-				kBoard = document.getElementById("drag3"),
-				hihat = document.getElementById("drag4"),
-				tri = document.getElementById("drag5"),
-				bass = document.getElementById("drag6"),
-				horn = document.getElementById("drag7");
-
-  if (document.getElementById("musicBox").contains(kick)) {
-  	document.querySelector("#kickdrum").play();
-  }
-   if (document.getElementById("musicBox").contains(snare)) {
-  	document.querySelector("#snare").play();
-  }
-  if (document.getElementById("musicBox").contains(bass)) {
-  	document.querySelector("#bass").play();
-  }
-  if (document.getElementById("musicBox").contains(tri)) {
-  	document.querySelector("#triangle1").play();
-  }
-  if (document.getElementById("musicBox").contains(hihat)) {
-  	document.querySelector("#hihat").play();
-  }
-  if (document.getElementById("musicBox").contains(kBoard)) {
-  	document.querySelector("#keyboard").play();
-  }
-  if (document.getElementById("musicBox").contains(horn)) {
-  	document.querySelector("#horn").play();
-  }
-  if (document.getElementById("musicBox").contains(test)) {
-  	document.querySelector("#snare").play();
-  }
+			// repeat the sound after it finishes
+			
+				newSound.play();
+		newSound.addEventListener('ended', function() {
+    		this.currentTime = 0;
+    			this.play();
+    		});
 		});
 	});
-
 })();
