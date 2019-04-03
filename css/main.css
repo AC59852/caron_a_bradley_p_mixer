@@ -41,7 +41,7 @@ ul, li, a, p
 
 #playArea {
 	width: 85%;
-	height: 900px;
+	height: 800px;
 	margin: 0 auto;
 }
 
@@ -89,7 +89,7 @@ ul, li, a, p
 
 #iconsBox
 {
-	background-color: rgba(222,333,255,0.4);
+	background-color: rgba(7,68,122,0.4);
 	width: 70%;
 	border: solid 2px rgba(0,0,0,0.4);
 	height: 100px;
@@ -103,7 +103,7 @@ ul, li, a, p
 
 #descBox
 {
-	background-color: rgba(222,333,255,0.4);
+	background-color: rgba(7,68,122,0.4);
 	width: 70%;
 	border: solid 2px rgba(0,0,0,0.4);
 	height: 150px;
@@ -113,7 +113,7 @@ ul, li, a, p
 
 #descBox p 
 {
-	color: black;
+	color: white;
 	padding-top: 20px;
 	padding-bottom: 50px;	
 	text-align: left;
@@ -130,7 +130,7 @@ ul, li, a, p
 #descBox h2
 {
 	font-size: 26px;
-	color: black;
+	color: white;
 	font-weight: bold;
 	letter-spacing: 1px;
 	margin-left: 15px;
